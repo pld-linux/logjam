@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Logjam
+Type=Application
+Exec=/usr/bin/logjam
+Icon=/usr/share/pixmaps/gnome-log.png
+Categories=Application;Network;X-Red-Hat-Base;
