@@ -2,13 +2,14 @@ Summary:	The GTK+2-client for LiveJournal
 Summary(pl):	Oparty na GTK+2 klient do LiveJournala
 Name:		logjam
 Version:	4.4.0
-Release:	3
+Release:	4
 License:	GPL
 Group:		X11/Applications
 Source0:	http://logjam.danga.com/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	7ff366dee32d354338132bfd5c5adb46
 Source1:	%{name}.desktop
 URL:		http://logjam.danga.com/
+BuildRequires:	automake
 BuildRequires:	curl-devel
 BuildRequires:	gettext-devel
 BuildRequires:	gtk+2-devel >= 2.0
@@ -30,6 +31,7 @@ To jest nowy, oparty na GTK+2, klient dla LiveJournala
 %setup -q 
 
 %build
+cp -f /usr/share/automake/config.sub .
 %configure \
 	--with-xmms=runtime
 %{__make}
