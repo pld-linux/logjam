@@ -5,3 +5,4 @@ Type=Application
 Exec=/usr/bin/logjam
 Icon=/usr/share/pixmaps/gnome-log.png
 Categories=Application;Network;X-Red-Hat-Base;
+# vi: encoding=utf-8
