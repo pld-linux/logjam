@@ -12,7 +12,7 @@ URL:		http://logjam.danga.com/
 BuildRequires:	automake
 BuildRequires:	curl-devel
 BuildRequires:	gettext-devel
-BuildRequires:	gtk+2-devel >= 2.0
+BuildRequires:	gtk+2-devel >= 1:2.0
 BuildRequires:	gtkhtml-devel >= 3.0
 BuildRequires:	gtkspell-devel >= 2.0
 BuildRequires:	librsvg-devel >= 2.2.3
