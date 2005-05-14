@@ -9,3 +9,14 @@
  AM_GLIB_GNU_GETTEXT
  
  AC_MSG_CHECKING([for mingw])
+--- logjam-4.4.1/configure~	2005-05-14 10:23:44.000000000 +0200
++++ logjam-4.4.1/configure	2005-05-14 10:23:44.000000000 +0200
+@@ -19416,7 +19416,7 @@
+ #define GETTEXT_PACKAGE "$GETTEXT_PACKAGE"
+ _ACEOF
+ 
+-ALL_LINGUAS="es en_GB en_US.UTF-8 de he ru_RU uk_UA"
++ALL_LINGUAS="es en_GB en_US de he ru uk"
+ 
+ 
+ for ac_header in locale.h
