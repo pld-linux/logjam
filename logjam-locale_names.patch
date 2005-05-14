@@ -1,0 +1,11 @@
+--- logjam-4.4.1/configure.in~	2005-05-14 10:18:09.000000000 +0200
++++ logjam-4.4.1/configure.in	2005-05-14 10:18:09.000000000 +0200
+@@ -18,7 +18,7 @@
+ GETTEXT_PACKAGE=logjam
+ AC_SUBST(GETTEXT_PACKAGE)
+ AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],"$GETTEXT_PACKAGE",[gettext package])
+-ALL_LINGUAS="es en_GB en_US.UTF-8 de he ru_RU uk_UA"
++ALL_LINGUAS="es en_GB en_US de he ru uk"
+ AM_GLIB_GNU_GETTEXT
+ 
+ AC_MSG_CHECKING([for mingw])
