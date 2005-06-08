@@ -20,6 +20,7 @@ BuildRequires:	gtkspell-devel >= 2.0
 BuildRequires:	intltool
 BuildRequires:	librsvg-devel >= 2.2.3
 BuildRequires:	libxml2-devel >= 2.0
+BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
