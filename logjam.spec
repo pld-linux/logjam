@@ -8,7 +8,7 @@ Group:		X11/Applications
 Source0:	http://neugierig.org/software/logjam/download/%{name}-%{version}.tar.bz2
 # Source0-md5:	ccae70dc36644cd1529c581443484ebe
 Source1:	%{name}.desktop
-Patch1:		%{name}-locale_names.patch
+Patch0:		%{name}-locale_names.patch
 URL:		http://logjam.danga.com/
 BuildRequires:	automake
 BuildRequires:	curl-devel
@@ -33,7 +33,7 @@ To jest nowy, oparty na GTK+2, klient dla LiveJournala
 
 %prep
 %setup -q 
-%patch1 -p1
+%patch0 -p1
 mv -f po/{uk_UA,uk}.po
 mv -f po/{ru_RU,ru}.po
 mv -f po/en_US{.UTF-8,}.po
