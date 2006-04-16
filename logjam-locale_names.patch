@@ -1,22 +1,28 @@
---- logjam-4.4.1/configure.in~	2005-05-14 10:18:09.000000000 +0200
-+++ logjam-4.4.1/configure.in	2005-05-14 10:18:09.000000000 +0200
+diff -ur logjam-4.5.1-o/configure logjam-4.5.1/configure
+--- logjam-4.5.1-o/configure	2005-08-24 21:37:42.000000000 -0600
++++ logjam-4.5.1/configure	2006-04-08 03:21:29.000000000 -0600
+@@ -19664,7 +19664,7 @@
+ #define GETTEXT_PACKAGE "$GETTEXT_PACKAGE"
+ _ACEOF
+ 
+-ALL_LINGUAS="es en_GB en_US.UTF-8 de he ja ru_RU uk_UA"
++ALL_LINGUAS="es en_GB en_US de he ja ru uk"
+ 
+ 
+ for ac_header in locale.h
+Only in logjam-4.5.1: configure~
+diff -ur logjam-4.5.1-o/configure.in logjam-4.5.1/configure.in
+--- logjam-4.5.1-o/configure.in	2005-08-24 21:36:59.000000000 -0600
++++ logjam-4.5.1/configure.in	2006-04-08 03:21:06.000000000 -0600
 @@ -18,7 +18,7 @@
  GETTEXT_PACKAGE=logjam
  AC_SUBST(GETTEXT_PACKAGE)
  AC_DEFINE_UNQUOTED([GETTEXT_PACKAGE],"$GETTEXT_PACKAGE",[gettext package])
--ALL_LINGUAS="es en_GB en_US.UTF-8 de he ru_RU uk_UA"
-+ALL_LINGUAS="es en_GB en_US de he ru uk"
+-ALL_LINGUAS="es en_GB en_US.UTF-8 de he ja ru_RU uk_UA"
++ALL_LINGUAS="es en_GB en_US de he ja ru uk"
  AM_GLIB_GNU_GETTEXT
  
- AC_MSG_CHECKING([for mingw])
---- logjam-4.4.1/configure~	2005-05-14 10:23:44.000000000 +0200
-+++ logjam-4.4.1/configure	2005-05-14 10:23:44.000000000 +0200
-@@ -19416,7 +19416,7 @@
- #define GETTEXT_PACKAGE "$GETTEXT_PACKAGE"
- _ACEOF
- 
--ALL_LINGUAS="es en_GB en_US.UTF-8 de he ru_RU uk_UA"
-+ALL_LINGUAS="es en_GB en_US de he ru uk"
- 
- 
- for ac_header in locale.h
+ dnl Even though the Unix versions don't use gthread, the soup
+Only in logjam-4.5.1: configure.in~
+Only in logjam-4.5.1: configure.in.orig
+Only in logjam-4.5.1: configure.orig
