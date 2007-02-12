@@ -1,5 +1,5 @@
 Summary:	The GTK+2-client for LiveJournal
-Summary(pl):	Oparty na GTK+2 klient do LiveJournala
+Summary(pl.UTF-8):   Oparty na GTK+2 klient do LiveJournala
 Name:		logjam
 Version:	4.5.1
 Release:	1
@@ -27,7 +27,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This is the new GTK+2 client for LiveJournal
 (http://www.livejournal.com/).
 
-%description -l pl
+%description -l pl.UTF-8
 To jest nowy, oparty na GTK+2, klient dla LiveJournala
 (http://www.livejournal.com/).
 
