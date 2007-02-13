@@ -1,5 +1,5 @@
 Summary:	The GTK+2-client for LiveJournal
-Summary(pl.UTF-8):   Oparty na GTK+2 klient do LiveJournala
+Summary(pl.UTF-8):	Oparty na GTK+2 klient do LiveJournala
 Name:		logjam
 Version:	4.5.1
 Release:	1
