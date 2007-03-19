@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_with	sqlite		# sqlite
+#
 Summary:	The GTK+2-client for LiveJournal
 Summary(pl):	Oparty na GTK+2 klient do LiveJournala
 Name:		logjam
@@ -42,7 +46,7 @@ mv -f po/en_US{.UTF-8,}.po
 cp -f /usr/share/automake/config.sub .
 %configure \
 	--with-xmms=runtime \
-	--with-sqlite3
+	%{?with_sqlite:--with-sqlite3}
 %{__make}
 
 %install
