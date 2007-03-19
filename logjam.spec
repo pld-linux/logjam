@@ -23,7 +23,7 @@ BuildRequires:	gtkspell-devel >= 2.0
 BuildRequires:	intltool
 BuildRequires:	librsvg-devel >= 2.2.3
 BuildRequires:	libxml2-devel >= 2.0
-BuildRequires:	sqlite3-devel
+%{?with_sqlite:BuildRequires:	sqlite3-devel}
 BuildRequires:	pkgconfig
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
