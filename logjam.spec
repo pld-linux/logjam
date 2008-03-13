@@ -5,12 +5,12 @@
 Summary:	The GTK+2-client for LiveJournal
 Summary(pl.UTF-8):	Oparty na GTK+2 klient do LiveJournala
 Name:		logjam
-Version:	4.5.1
+Version:	4.5.3
 Release:	1
 License:	GPL
 Group:		X11/Applications
-Source0:	http://neugierig.org/software/logjam/download/%{name}-%{version}.tar.bz2
-# Source0-md5:	ccae70dc36644cd1529c581443484ebe
+Source0:	http://logjam.danga.com/download/%{name}-%{version}.tar.bz2
+# Source0-md5:	48092c00e1f40ebee431b4e0071ae273
 Source1:	%{name}.desktop
 Patch0:		%{name}-locale_names.patch
 URL:		http://logjam.danga.com/
@@ -23,8 +23,8 @@ BuildRequires:	gtkspell-devel >= 2.0
 BuildRequires:	intltool
 BuildRequires:	librsvg-devel >= 2.2.3
 BuildRequires:	libxml2-devel >= 2.0
-%{?with_sqlite:BuildRequires:	sqlite3-devel}
 BuildRequires:	pkgconfig
+%{?with_sqlite:BuildRequires:	sqlite3-devel}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -36,7 +36,7 @@ To jest nowy, oparty na GTK+2, klient dla LiveJournala
 (http://www.livejournal.com/).
 
 %prep
-%setup -q 
+%setup -q
 %patch0 -p1
 mv -f po/{uk_UA,uk}.po
 mv -f po/{ru_RU,ru}.po
