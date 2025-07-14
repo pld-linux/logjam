@@ -37,7 +37,7 @@ To jest nowy, oparty na GTK+2, klient dla LiveJournala
 
 %prep
 %setup -q
-%patch0 -p1
+%patch -P0 -p1
 mv -f po/{uk_UA,uk}.po
 mv -f po/{ru_RU,ru}.po
 mv -f po/en_US{.UTF-8,}.po
